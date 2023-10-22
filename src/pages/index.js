@@ -1,3 +1,5 @@
-export default function Home() {
-	return <div>Hello World</div>;
+import Home from "./Home";
+
+export default function Main() {
+	return <Home />;
 }
