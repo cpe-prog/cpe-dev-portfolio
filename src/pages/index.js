@@ -1,9 +1,11 @@
+import NavBar from "@/layouts/NavBar";
 import Home from "./Home";
 
 export default function Main() {
 	return (
-		<main className="p-0 m-0 w-auto h-auto">
+		<div className="p-0 m-0 w-auto h-auto">
+			<NavBar />
 			<Home />
-		</main>
+		</div>
 	);
 }
