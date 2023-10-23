@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function NavBar() {
 	const inActiveLink =
-		"hover:bg-cyan-200 hover:text-cyan-800 hover:p-2 hover:rounded-md mr-8 p-2";
+		"hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-md mr-8 p-2";
 	return (
-		<nav className=" h-14  flex items-center justify-between font-medium text-gray-700">
+		<nav className=" h-14 bg-slate-200 flex items-center justify-between font-medium text-gray-700">
 			<Link className="font-extrabold text-gray-700 pl-9" href={"/"}>
 				Cpe-Prog.
 			</Link>
