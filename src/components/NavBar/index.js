@@ -1,27 +1,30 @@
 import Link from "next/link";
 
 export default function NavBar() {
-	const inActiveLink =
-		"hover:bg-slate-600 hover:text-white hover:p-2 hover:rounded-md mr-8 p-2";
+	const inActiveLink = "hover:p-2  mr-8 p-2 Underline relative";
 	return (
-		<nav className=" h-14 bg-slate-200 flex items-center justify-between font-medium text-gray-700">
-			<Link className="font-extrabold text-gray-700 pl-9" href={"/"}>
-				Cpe-Prog.
-			</Link>
-			<div>
-				<Link className={inActiveLink} href={"/"}>
-					<span>About Me</span>
-				</Link>
-				<Link className={inActiveLink} href={"/"}>
-					<span className="">Skills</span>
-				</Link>
-				<Link className={inActiveLink} href={"/"}>
-					<span className="">Projects</span>
-				</Link>
-				<Link className={inActiveLink} href={"/"}>
-					<span className="">Contact</span>
-				</Link>
-			</div>
-		</nav>
+		<>
+			<header className=" w-full h-14 bg-slate-200 flex items-center justify-between font-medium text-gray-700">
+				<nav>
+					<Link className="font-extrabold unde text-gray-700 pl-9" href={"/"}>
+						Cpe-Prog.
+					</Link>
+				</nav>
+				<nav>
+					<Link className={inActiveLink} href="/AboutMe">
+						About Me
+					</Link>
+					<Link className={inActiveLink} href={"/"}>
+						Skills
+					</Link>
+					<Link className={inActiveLink} href={"/"}>
+						Projects
+					</Link>
+					<Link className={inActiveLink} href={"/"}>
+						Contact
+					</Link>
+				</nav>
+			</header>
+		</>
 	);
 }
