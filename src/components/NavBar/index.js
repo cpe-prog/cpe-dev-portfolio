@@ -6,7 +6,7 @@ export default function NavBar() {
 		<>
 			<header className=" w-full h-14 bg-slate-200 flex items-center justify-between font-medium text-gray-700">
 				<nav>
-					<Link className="font-extrabold unde text-gray-700 pl-9" href={"/"}>
+					<Link className="font-extrabold unde text-gray-700 pl-9" href="/">
 						Cpe-Prog.
 					</Link>
 				</nav>
@@ -14,13 +14,13 @@ export default function NavBar() {
 					<Link className={inActiveLink} href="/About">
 						About Me
 					</Link>
-					<Link className={inActiveLink} href={"/Skills"}>
+					<Link className={inActiveLink} href="/Skills">
 						Skills
 					</Link>
-					<Link className={inActiveLink} href={"/Projects"}>
+					<Link className={inActiveLink} href="/Projects">
 						Projects
 					</Link>
-					<Link className={inActiveLink} href={"/Contact"}>
+					<Link className={inActiveLink} href="/Contact">
 						Contact
 					</Link>
 				</nav>
