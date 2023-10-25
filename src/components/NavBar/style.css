@@ -2,7 +2,7 @@
 	bottom: 0;
 	content: "";
 	display: block;
-	height: 5px;
+	height: 4px;
 	position: absolute;
 	background: #5fd3b6;
 	transition: width 0.3s ease 0s, left 0.6s ease 0s;
@@ -14,7 +14,7 @@
 }
 
 .fontColor {
-	color: #677774;
+	color: #627572;
 	font-size: 16px;
 	font-weight: 400;
 }
