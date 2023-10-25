@@ -5,7 +5,7 @@ import { Roboto } from "next/font/google";
 import Head from "next/head";
 
 const roboto = Roboto({
-	weight: "400",
+	weight: "500",
 	subsets: ["latin"],
 });
 
