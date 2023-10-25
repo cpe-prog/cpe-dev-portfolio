@@ -7,7 +7,7 @@ export default function NavBar() {
 			<header className=" w-full h-16 flex items-center justify-around fontColor">
 				<nav className="mr-20">
 					<Link
-						className="font-extrabold text-transparent text-xl shadow- drop-shadow-md bg-clip-text bg-gradient-to-r from-black via-cyan-400 to-black"
+						className="font-extrabold text-transparent text-xl shadow- drop-shadow-md bg-clip-text bg-gradient-to-r from-black via-cyan-400 via-50% to-black"
 						href="/"
 					>
 						Cpe-Prog.
