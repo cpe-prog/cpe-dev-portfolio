@@ -1,5 +1,6 @@
 import Link from "next/link";
-import ThemeMode from "../icons/icon";
+import { ThemeMode } from "../icons/icon";
+import { GithubIcon } from "./../icons/icon";
 
 export default function NavBar() {
 	const inActiveLink = "hover:p-2  mr-8 p-2 Underline inline-block relative";
@@ -30,9 +31,12 @@ export default function NavBar() {
 						</Link>
 					</div>
 				</nav>
-				<nav>
-					<Link>
+				<nav className="flex items-center gap-4">
+					<Link href="/">
 						<ThemeMode />
+					</Link>
+					<Link href="https://github.com/cpe-prog" target="_blank">
+						<GithubIcon />
 					</Link>
 				</nav>
 			</header>
