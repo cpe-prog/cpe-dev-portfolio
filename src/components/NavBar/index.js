@@ -1,3 +1,5 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { ThemeMode } from "../icons/icon";
 import { GithubIcon } from "./../icons/icon";
@@ -32,12 +34,17 @@ export default function NavBar() {
 					</div>
 				</nav>
 				<nav className="flex items-center gap-4">
-					<Link href="/">
+					<button>
 						<ThemeMode />
-					</Link>
-					<Link href="https://github.com/cpe-prog" target="_blank">
+					</button>
+					<motion.a
+						href="https://github.com/cpe-prog"
+						target={"_blank"}
+						whileHover={{ y: -4 }}
+						whileTap={{ scale: 0.8 }}
+					>
 						<GithubIcon />
-					</Link>
+					</motion.a>
 				</nav>
 			</header>
 		</>
