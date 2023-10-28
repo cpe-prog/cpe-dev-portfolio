@@ -17,7 +17,7 @@ export default function NavBar() {
 						Cpe-Prog.
 					</Link>
 				</nav>
-				<nav className="p-2 bg">
+				<nav className="p-2 text-dark">
 					<div>
 						<Link className={inActiveLink} href="/About">
 							About Me
