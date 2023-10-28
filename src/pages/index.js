@@ -15,11 +15,7 @@ export default function Home() {
 				<Layout className="pt-0">
 					<div className="flex items-center justify-between w-full">
 						<div>
-							<Image
-								src={ProfileImage}
-								alt="Profile.img"
-								className="w-full h-auto"
-							/>
+							<Image src={ProfileImage} alt="Profile.img" className="w-96" />
 						</div>
 					</div>
 				</Layout>
