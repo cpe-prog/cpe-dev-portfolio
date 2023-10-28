@@ -4,7 +4,7 @@
 	display: block;
 	height: 4px;
 	position: absolute;
-	background: #52b69d;
+	background: #69d3a7;
 	transition: width 0.3s ease 0s, left 0.6s ease 0s;
 	width: 0;
 	border-radius: 5px;

@@ -8,8 +8,10 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				dark: "#1b1b1b",
-				light: "#f5f5f5",
+				bgDark: "#0d1117",
+				bgLight: "#f0fcf8",
+				textLight: "#b8bcc6",
+				textDark: "#5a5f7a",
 				primary: " #b63e96",
 				primaryDark: "#58e6d9",
 				acuaGreen: {
