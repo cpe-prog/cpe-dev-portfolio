@@ -33,7 +33,7 @@ export default function NavBar() {
 						</Link>
 					</div>
 				</nav>
-				<nav className="flex items-center gap-4">
+				<nav className="flex items-center gap-6">
 					<button>
 						<ThemeMode />
 					</button>
