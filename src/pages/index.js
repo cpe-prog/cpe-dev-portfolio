@@ -1,5 +1,8 @@
+/* eslint-disable jsx-a11y/alt-text */
+import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
 import { Layout } from "@/components/Layout";
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
 	return (
@@ -10,7 +13,15 @@ export default function Home() {
 			</Head>
 			<main className="flex items-center text-dark w-full min-h-screen">
 				<Layout>
-					<h1>Home</h1>
+					<div className="flex items-center justify-between w-full">
+						<div>
+							<Image
+								src={ProfileImage}
+								alt="Profile.img"
+								className="w-full h-auto"
+							/>
+						</div>
+					</div>
 				</Layout>
 			</main>
 		</>
