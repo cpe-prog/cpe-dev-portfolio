@@ -14,12 +14,14 @@ export default function Home() {
 			<main className="flex items-center text-textDark w-full min-h-screen">
 				<Layout className="pt-0">
 					<div className="flex items-center justify-between w-full">
-						<div className=" rounded-tr-full rounded-br-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700">
-							<Image
-								src={ProfileImage}
-								alt="Profile.img"
-								className="w-96 rounded-r-full rounded-l-3xl"
-							/>
+						<div className=" rounded-tl-full  bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700">
+							<div className=" bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700">
+								<Image
+									src={ProfileImage}
+									alt="Profile.img"
+									className="w-96 rounded-r-full rounded-l-3xl"
+								/>
+							</div>
 						</div>
 					</div>
 				</Layout>
