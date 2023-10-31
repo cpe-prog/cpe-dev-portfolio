@@ -19,7 +19,7 @@ export default function Home() {
 							<h2>UI/UX designer, Responsive Web Design</h2>
 							<p>Aspiring Senior Full Stack Web Developer.</p>
 						</div>
-						<div className=" rounded-tr-3xl rounded-br-full rounded-tl-full rounded-bl-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
+						<div className=" rounded-tr-3xl rounded-br-full rounded-3xl rounded-tl-full rounded-bl-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
 							<div className="rounded-3xl rounded-tl-full rounded-br-full rounded-tr-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
 								<Image
 									src={ProfileImage}
