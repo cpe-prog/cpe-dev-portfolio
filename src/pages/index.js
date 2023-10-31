@@ -15,7 +15,7 @@ export default function Home() {
 				<Layout className="pt-0">
 					<div className="flex items-center justify-between w-full">
 						<div className=" rounded-tl-full  bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700">
-							<div className=" bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700">
+							<div className=" bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
 								<Image
 									src={ProfileImage}
 									alt="Profile.img"

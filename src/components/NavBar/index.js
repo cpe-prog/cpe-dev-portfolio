@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import { motion } from "framer-motion";
 import Link from "next/link";
+
 import { ThemeMode } from "../icons/icon";
 import { GithubIcon } from "./../icons/icon";
 

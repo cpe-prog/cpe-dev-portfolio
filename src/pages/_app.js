@@ -1,5 +1,6 @@
 import NavBar from "@/components/NavBar";
-import "@/components/NavBar/style.css";
+import "@/styles/AnimatedBg.css";
+import "@/styles/NavBar.css";
 import "@/styles/globals.css";
 import { Roboto } from "next/font/google";
 import Head from "next/head";
