@@ -1,16 +1,14 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 import { ThemeMode } from "../icons/icon";
-import { GithubIcon } from "./../icons/icon";
 
 export default function NavBar() {
 	const inActiveLink = "hover:p-2  mr-8 p-2 Underline inline-block relative";
 	return (
 		<>
 			<header className=" w-full bg-bgLight drop-shadow-xl shadow-black fixed h-16 flex items-center justify-around fontColor">
-				<nav className="mr-20">
+				<nav>
 					<Link
 						className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
 						href="/"
@@ -38,14 +36,14 @@ export default function NavBar() {
 					<button>
 						<ThemeMode />
 					</button>
-					<motion.a
+					{/* <motion.a
 						href="https://github.com/cpe-prog"
 						target={"_blank"}
 						whileHover={{ y: -4 }}
 						whileTap={{ scale: 0.8 }}
 					>
 						<GithubIcon />
-					</motion.a>
+					</motion.a> */}
 				</nav>
 			</header>
 		</>
