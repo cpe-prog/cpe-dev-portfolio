@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
 import { Layout } from "@/components/Layout";
@@ -15,12 +16,14 @@ export default function Home() {
 				<Layout className="pt-0">
 					<div className="flex items-center justify-around w-full">
 						<div className="text-xl">
-							<h1 className="text-5xl">Hello I'm Grian Gajila</h1>
+							<h1 className="text-5xl text-textLight bg-bgDark">
+								Hello I'm Grian Gajila
+							</h1>
 							<h2>UI/UX designer, Responsive Web Design</h2>
 							<p>Aspiring Senior Full Stack Web Developer.</p>
 						</div>
-						<div className=" rounded-tr-3xl rounded-br-full rounded-3xl rounded-tl-full rounded-bl-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
-							<div className="rounded-3xl rounded-tl-full rounded-br-full rounded-tr-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
+						<div className=" rounded-br-full rounded-bl-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
+							<div className=" rounded-br-full rounded-tr-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
 								<Image
 									src={ProfileImage}
 									alt="Profile.img"
