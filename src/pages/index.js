@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
 import { Layout } from "@/components/Layout";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -16,7 +17,7 @@ export default function Home() {
 				<Layout className="pt-0">
 					<div className="flex items-center justify-around w-full">
 						<div className="text-xl">
-							<h1 className="text-5xl p-2 rounded-lg mb-5 text-bgLight bg-bgDark">
+							<h1 className="text-5xl cursor-default p-2 rounded-md mb-5 text-bgLight bg-textDark hoverBg">
 								Hello I'm Grian Gajila
 							</h1>
 							<div className="p-2">
@@ -24,11 +25,11 @@ export default function Home() {
 								<p>Aspiring Senior Full Stack Web Developer.</p>
 							</div>
 						</div>
-						<div className=" flex relative">
+						<motion.div whileHover={{ y: -6 }}>
 							<div className="  rounded-md bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% shadow-2xl background-animate">
 								<Image src={ProfileImage} alt="Profile.img" className="w-72" />
 							</div>
-						</div>
+						</motion.div>
 					</div>
 				</Layout>
 			</main>

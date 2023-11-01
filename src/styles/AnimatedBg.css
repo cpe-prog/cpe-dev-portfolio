@@ -15,3 +15,13 @@
 		background-position: 100% 50%;
 	}
 }
+
+.hoverBg {
+	display: inline-block;
+	background: linear-gradient(to left, #5a5f7a 50%, #69d3a7 50%) right;
+	background-size: 200%;
+	transition: 0.5s ease-out;
+}
+.hoverBg:hover {
+	background-position: left;
+}
