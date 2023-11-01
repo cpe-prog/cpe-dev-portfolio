@@ -16,19 +16,17 @@ export default function Home() {
 				<Layout className="pt-0">
 					<div className="flex items-center justify-around w-full">
 						<div className="text-xl">
-							<h1 className="text-5xl text-textLight bg-bgDark">
+							<h1 className="text-5xl p-2 rounded-lg mb-5 text-bgLight bg-bgDark">
 								Hello I'm Grian Gajila
 							</h1>
-							<h2>UI/UX designer, Responsive Web Design</h2>
-							<p>Aspiring Senior Full Stack Web Developer.</p>
+							<div className="p-2">
+								<h2>Web Developer</h2>
+								<p>Aspiring Senior Full Stack Web Developer.</p>
+							</div>
 						</div>
-						<div className=" rounded-br-full rounded-bl-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
-							<div className=" rounded-br-full rounded-tr-full bg-gradient-to-tl from-slate-800 via-cyan-300 to-slate-700 background-animate">
-								<Image
-									src={ProfileImage}
-									alt="Profile.img"
-									className="w-96 rounded-r-full rounded-l-3xl"
-								/>
+						<div className=" flex relative">
+							<div className="  rounded-md bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% shadow-2xl background-animate">
+								<Image src={ProfileImage} alt="Profile.img" className="w-72" />
 							</div>
 						</div>
 					</div>
