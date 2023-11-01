@@ -16,18 +16,23 @@ export default function Home() {
 			<main className="flex items-center text-textDark w-full min-h-screen">
 				<Layout className="pt-0">
 					<div className="flex items-center justify-around w-full">
-						<div className="text-xl">
-							<h1 className="text-5xl cursor-default p-2 rounded-md mb-5 text-bgLight bg-textDark hoverBg">
-								Hello I'm Grian Gajila
-							</h1>
-							<div className="p-2">
-								<h2>Web Developer</h2>
-								<p>Aspiring Senior Full Stack Web Developer.</p>
+						<div className="">
+							<h2 className="text-md cursor-default p-2 rounded-md mb-5 text-bgLight bg-textDark hoverBg">
+								👋 Hi! I'm Grian Gajila
+							</h2>
+							<div>
+								<h1 className="text-3xl text-bgDark font-extrabold mb-5">
+									Front End <br /> Web / Software Engineer
+								</h1>
+								<p className="font">
+									turning ideas into real life projects.
+									<br /> aspiring full stack Web Developer / Software Engineer
+								</p>
 							</div>
 						</div>
 						<motion.div whileHover={{ y: -6 }}>
 							<div className="  rounded-md bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% shadow-2xl background-animate">
-								<Image src={ProfileImage} alt="Profile.img" className="w-72" />
+								<Image src={ProfileImage} alt="Profile.img" className="w-64" />
 							</div>
 						</motion.div>
 					</div>
