@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
 import { Layout } from "@/components/Layout/Home";
+import { Tech } from "@/components/Tech";
 import Head from "next/head";
 import Image from "next/image";
 import { GithubIcon, LinkedinIcon } from "./../components/icons/icon";
@@ -44,6 +45,12 @@ export default function Home() {
 								<a href={"https://github.com/cpe-prog"} target={"_blank"}>
 									<GithubIcon />
 								</a>
+							</div>
+							<div className="flex mt-10 p-3 border-2 rounded-md">
+								<h1 className=" border-r-2 border-solid pr-5 border-textDark ">
+									Tech Stack
+								</h1>
+								<Tech />
 							</div>
 						</div>
 						<div className="flex">
