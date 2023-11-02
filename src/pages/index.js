@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
-import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
+import ProfileImage from "@/assets/images/MyProfile-2.png";
 import { Layout } from "@/components/Layout/Home";
-import { Tech } from "@/components/TechIcon";
+import { Tech } from "@/components/TechStackIcon";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -23,7 +23,7 @@ export default function Home() {
 							</h2>
 							<div>
 								<h1 className="text-3xl text-bgDark font-extrabold mb-5">
-									Front End <br /> Web Developer
+									Front-End Developer
 								</h1>
 								<p className="font-normal">
 									turning ideas into real life projects.
