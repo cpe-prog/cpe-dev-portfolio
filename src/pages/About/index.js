@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout/AboutMe";
+import { Layout } from "@/Layouts/About";
 import Head from "next/head";
 
 export default function AboutMe() {
