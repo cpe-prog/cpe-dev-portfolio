@@ -3,6 +3,7 @@
 import { Layout } from "@/Layouts/Home";
 import ProfileImage from "@/assets/images/MyProfile-2.png";
 import { Tech } from "@/components/TechStackIcon";
+import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -46,15 +47,16 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="flex">
-							<div>
-								<div className=" rounded-md bg-gradient-to-tl from-activeBorderBottom via-bgLight to-activeBorderBottom via-50% background-animate">
-									<Image
-										src={ProfileImage}
-										alt="Profile.img"
-										className="w-64"
-									/>
-								</div>
-							</div>
+							<motion.div
+								whileHover={{ y: -4 }}
+								className=" rounded-tl-full rounded-br-full rounded-tr-full bg-gradient-to-tl from-activeBorderBottom via-bgLight to-activeBorderBottom via-50% background-animate"
+							>
+								<Image
+									src={ProfileImage}
+									alt="Profile.img"
+									className="w-64 rounded-br-full rounded-tr-full"
+								/>
+							</motion.div>
 						</div>
 					</div>
 				</Layout>
