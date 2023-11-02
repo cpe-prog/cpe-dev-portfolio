@@ -4,7 +4,6 @@ import "@/styles/NavBar.css";
 import "@/styles/globals.css";
 import { Roboto } from "next/font/google";
 import Head from "next/head";
-import AboutMe from "./About";
 
 const roboto = Roboto({
 	weight: "500",
@@ -20,7 +19,6 @@ export default function App({ Component, pageProps }) {
 			<main className={`${roboto.className} bg-bgLight w-full min-h-screen`}>
 				<NavBar />
 				<Component {...pageProps} />
-				<AboutMe />
 			</main>
 		</>
 	);
