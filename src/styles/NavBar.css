@@ -1,4 +1,4 @@
-.Underline:after {
+.inActiveLink:after {
 	bottom: 0;
 	content: "";
 	display: block;
@@ -9,7 +9,7 @@
 	width: 0;
 	border-radius: 5px;
 }
-.Underline:hover:after {
+.inActiveLink:hover:after {
 	width: 50%;
 }
 
