@@ -39,7 +39,7 @@ export default function Home() {
 								</p>
 							</div>
 
-							<div className="flex techStack mt-8 p-3 border-2 rounded-md">
+							<div className="flex techStack mt-10 p-3 border-2 rounded-md">
 								<h1 className=" border-r-2 border-solid pr-5 border-textDark ">
 									Tech Stack
 								</h1>
