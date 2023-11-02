@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Draggable from "react-draggable";
+import { GithubIcon, LinkedinIcon } from "./../components/icons/icon";
 
 export default function Home() {
 	return (
@@ -18,9 +19,7 @@ export default function Home() {
 				<Draggable>
 					<div className="flex absolute rounded-lg h-20 w-20 cursor-grabbing bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% shadow-2xl background-animate"></div>
 				</Draggable>
-				<Draggable>
-					<div className="flex absolute rounded-full h-20 w-20 cursor-grabbing bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% shadow-2xl background-animate"></div>
-				</Draggable>
+
 				<Layout className="pt-0">
 					<div className="flex items-center justify-center gap-32 w-full">
 						<div>
@@ -42,7 +41,10 @@ export default function Home() {
 								</p>
 							</div>
 							<div className="flex justify-start gap-2 mt-2">
-								
+								<LinkedinIcon>
+									<a href="https://github.com/cpe-prog" target={"_blank"}></a>
+								</LinkedinIcon>
+								<GithubIcon />
 							</div>
 						</div>
 						<motion.div whileHover={{ y: -6 }}>

@@ -37,14 +37,6 @@ export default function NavBar() {
 					<button>
 						<ThemeMode />
 					</button>
-					{/* <motion.a
-						href="https://github.com/cpe-prog"
-						target={"_blank"}
-						whileHover={{ y: -4 }}
-						whileTap={{ scale: 0.8 }}
-					>
-						<GithubIcon />
-					</motion.a> */}
 				</nav>
 			</header>
 		</>
