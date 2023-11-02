@@ -1,5 +1,5 @@
 .background-animate {
-	background-size: 800%;
+	background-size: 400%;
 	box-shadow: 10px 8px 14px #607571;
 	-webkit-animation: AnimationName 3s ease infinite;
 	-moz-animation: AnimationName 3s ease infinite;
@@ -24,4 +24,21 @@
 }
 .hoverBg:hover {
 	background-position: left;
+}
+
+.gradiantBackground {
+	background-size: 200%;
+	-webkit-animation: AnimationBackground 3s ease infinite;
+	-moz-animation: AnimationBackground 3s ease infinite;
+	animation: AnimationBackground 3s ease infinite;
+}
+
+@keyframes AnimationBackground {
+	0%,
+	100% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
 }
