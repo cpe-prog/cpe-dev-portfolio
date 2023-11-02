@@ -22,12 +22,15 @@ export default function Home() {
 								👋 Hi! I'm Grian Gajila
 							</h2>
 							<div>
-								<h1 className="text-3xl text-bgDark font-extrabold mb-5">
-									Front-End Developer
+								<h1 className="text-3xl text-bgDark font-extrabold mb-3">
+									Front-End Web <br /> Developer
 								</h1>
 								<p className="font-normal">
-									turning ideas into real life projects.
-									<br /> aspiring{" "}
+									Turning ideas and imaginations into real life projects <br />{" "}
+									by providing responsive web design and user interface.
+								</p>
+								<p className="mt-2">
+									aspiring{" "}
 									<span className="font-semibold text-bgDark">
 										{"<Full Stack/>"}
 									</span>{" "}
@@ -35,7 +38,7 @@ export default function Home() {
 								</p>
 							</div>
 
-							<div className="flex techStack mt-10 p-3 border-2 rounded-md">
+							<div className="flex techStack mt-8 p-3 border-2 rounded-md">
 								<h1 className=" border-r-2 border-solid pr-5 border-textDark ">
 									Tech Stack
 								</h1>
