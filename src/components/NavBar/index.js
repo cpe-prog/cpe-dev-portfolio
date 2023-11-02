@@ -4,7 +4,8 @@ import Link from "next/link";
 import { ThemeMode } from "../icons/icon";
 
 export default function NavBar() {
-	const inActiveLink = "hover:p-2  mr-8 p-2 Underline inline-block relative";
+	const inActiveLink =
+		"hover:p-2 hover:text-textHoverDark mr-8 p-2 Underline text- inline-block relative";
 	return (
 		<>
 			<header className=" w-full bg-bgLight drop-shadow-xl shadow-black fixed h-16 flex items-center justify-around fontColor">
@@ -16,7 +17,7 @@ export default function NavBar() {
 						Cpe-Prog.
 					</Link>
 				</nav>
-				<nav className="p-2  text-textDark">
+				<nav className="p-2  text-textDark ">
 					<div>
 						<Link className={inActiveLink} href="/About">
 							About Me
