@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
 import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
-import { Layout } from "@/components/Layout";
+import { Layout } from "@/components/Layout/Home";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
@@ -41,10 +41,15 @@ export default function Home() {
 								</p>
 							</div>
 							<div className="flex justify-start gap-2 mt-2">
-								<LinkedinIcon>
-									<a href="https://github.com/cpe-prog" target={"_blank"}></a>
-								</LinkedinIcon>
-								<GithubIcon />
+								<a
+									href={"https://www.linkedin.com/in/grian-gajila/"}
+									target={"_blank"}
+								>
+									<LinkedinIcon />
+								</a>
+								<a href={"https://github.com/cpe-prog"} target={"_blank"}>
+									<GithubIcon />
+								</a>
 							</div>
 						</div>
 						<motion.div whileHover={{ y: -6 }}>
