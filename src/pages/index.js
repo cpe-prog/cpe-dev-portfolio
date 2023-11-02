@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
 import { Layout } from "@/components/Layout/Home";
-import { Tech } from "@/components/Tech";
+import { Tech } from "@/components/TechIcon";
 import Head from "next/head";
 import Image from "next/image";
 
@@ -23,7 +23,7 @@ export default function Home() {
 							</h2>
 							<div>
 								<h1 className="text-3xl text-bgDark font-extrabold mb-5">
-									Front End <br /> Web / Software Engineer
+									Front End <br /> Web Developer
 								</h1>
 								<p className="font-normal">
 									turning ideas into real life projects.
@@ -35,7 +35,7 @@ export default function Home() {
 								</p>
 							</div>
 
-							<div className="flex mt-10 p-3 border-2 rounded-md">
+							<div className="flex techStack mt-10 p-3 border-2 rounded-md">
 								<h1 className=" border-r-2 border-solid pr-5 border-textDark ">
 									Tech Stack
 								</h1>
