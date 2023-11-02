@@ -1,9 +1,13 @@
 .background-animate {
 	background-size: 800%;
-
+	box-shadow: 16px 14px 20px #5a5f7a;
 	-webkit-animation: AnimationName 3s ease infinite;
 	-moz-animation: AnimationName 3s ease infinite;
 	animation: AnimationName 3s ease infinite;
+}
+
+.background-animate::after {
+	box-shadow: inset 20px 20px 20px #5a5f7a;
 }
 
 @keyframes AnimationName {

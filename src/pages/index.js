@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/alt-text */
 import ProfileImage from "@/assets/images/profile/MyProfile-2.png";
 import { Layout } from "@/components/Layout/Home";
-import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import { GithubIcon, LinkedinIcon } from "./../components/icons/icon";
@@ -32,7 +31,7 @@ export default function Home() {
 									<span className="font-semibold text-bgDark">
 										{"<Full Stack/>"}
 									</span>{" "}
-									Web Developer / Software Engineer
+									Web Developer / Software Engineer.
 								</p>
 							</div>
 							<div className="flex justify-start gap-2 mt-2">
@@ -47,11 +46,11 @@ export default function Home() {
 								</a>
 							</div>
 						</div>
-						<motion.div className="flex" whileHover={{ y: -6 }}>
-							<div className="  rounded-md bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% shadow-2xl background-animate">
+						<div className="flex">
+							<div className=" rounded-md bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% background-animate">
 								<Image src={ProfileImage} alt="Profile.img" className="w-64" />
 							</div>
-						</motion.div>
+						</div>
 					</div>
 				</Layout>
 			</main>
