@@ -7,8 +7,8 @@ export const Tech = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
 				y="0px"
-				width="25"
-				height="25"
+				width="27"
+				height="27"
 				viewBox="0 0 48 48"
 				whileHover={{ y: -4 }}
 			>
@@ -27,8 +27,8 @@ export const Tech = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
 				y="0px"
-				width="25"
-				height="25"
+				width="27"
+				height="27"
 				viewBox="0 0 48 48"
 				whileHover={{ y: -4 }}
 			>
@@ -47,8 +47,8 @@ export const Tech = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
 				y="0px"
-				width="25"
-				height="25"
+				width="27"
+				height="27"
 				viewBox="0 0 48 48"
 				whileHover={{ y: -4 }}
 			>
@@ -62,8 +62,8 @@ export const Tech = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
 				y="0px"
-				width="25"
-				height="25"
+				width="27"
+				height="27"
 				viewBox="0 0 100 100"
 				whileHover={{ y: -4 }}
 			>
@@ -85,8 +85,8 @@ export const Tech = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
 				y="0px"
-				width="25"
-				height="25"
+				width="27"
+				height="27"
 				viewBox="0 0 48 48"
 				whileHover={{ y: -4 }}
 			>
@@ -99,8 +99,8 @@ export const Tech = () => {
 				xmlns="http://www.w3.org/2000/svg"
 				x="0px"
 				y="0px"
-				width="25"
-				height="25"
+				width="27"
+				height="27"
 				viewBox="0 0 48 48"
 				whileHover={{ y: -4 }}
 			>

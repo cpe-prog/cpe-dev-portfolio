@@ -32,9 +32,9 @@ export default function Home() {
 								<p className="mt-2">
 									aspiring{" "}
 									<span className="font-semibold text-bgDark">
-										{"<Full Stack/>"}
+										{"<Full-Stack/>"}
 									</span>{" "}
-									Web Developer / Software Engineer.
+									Web Developer.
 								</p>
 							</div>
 
@@ -46,8 +46,14 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="flex">
-							<div className=" rounded-md bg-gradient-to-tl from-textDark via-bgLight to-textDark via-50% background-animate">
-								<Image src={ProfileImage} alt="Profile.img" className="w-64" />
+							<div>
+								<div className=" rounded-md bg-gradient-to-tl from-activeBorderBottom via-bgLight to-activeBorderBottom via-50% background-animate">
+									<Image
+										src={ProfileImage}
+										alt="Profile.img"
+										className="w-64"
+									/>
+								</div>
 							</div>
 						</div>
 					</div>
