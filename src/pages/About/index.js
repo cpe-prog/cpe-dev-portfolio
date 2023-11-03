@@ -1,4 +1,4 @@
-import { Layout } from "@/Layouts/About";
+import { Layout } from "@/Layouts";
 import Head from "next/head";
 
 export default function About() {
