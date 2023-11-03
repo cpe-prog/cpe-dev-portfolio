@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 /* eslint-disable jsx-a11y/alt-text */
-import { Layout } from "@/Layouts";
 import ProfileImage from "@/assets/images/MyProfile-2.png";
-import { Tech } from "@/components/TechStackIcon";
+import { Layout } from "@/components/Layout";
+import { Tech } from "@/components/icons";
 import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";

@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedinIcon } from "../icons/icon";
+import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function NavBar() {
 	const router = useRouter();
@@ -13,7 +13,7 @@ export default function NavBar() {
 
 	return (
 		<>
-			<header className=" w-full bg-bgLight drop-shadow-xl shadow-black fixed h-14 flex items-center justify-around fontColor">
+			<header className=" w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center justify-around fontColor">
 				<nav>
 					<Link
 						className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
