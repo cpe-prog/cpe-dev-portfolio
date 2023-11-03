@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import Link from "next/link";
 import { useRouter } from "next/router";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
@@ -14,43 +13,43 @@ export default function NavBar() {
 	return (
 		<>
 			<header className=" w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center justify-around fontColor">
-				<nav>
-					<Link
+				<div>
+					<a
 						className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
 						href="/"
 					>
 						Cpe-Prog.
-					</Link>
-				</nav>
+					</a>
+				</div>
 				<nav>
 					<div>
-						<Link
+						<a
 							className={pathname === "/" ? activeLink : inActiveLink}
 							href={"/"}
 						>
 							Home
-						</Link>
-						<Link
+						</a>
+						<a
 							className={pathname === "/About" ? activeLink : inActiveLink}
 							href={"/About"}
 						>
 							About
-						</Link>
-						<Link
+						</a>
+						<a
 							className={pathname === "/Projects" ? activeLink : inActiveLink}
 							href={"/Projects"}
 						>
 							Projects
-						</Link>
-						<Link
+						</a>
+						<a
 							className={pathname === "/Contact" ? activeLink : inActiveLink}
 							href={"/Contact"}
 						>
 							Contact
-						</Link>
+						</a>
 					</div>
 				</nav>
-				<nav className="flex items-center">
+				<div className="flex items-center">
 					<div className="flex justify-start gap-4">
 						<a
 							href={"https://www.linkedin.com/in/grian-gajila/"}
@@ -62,7 +61,7 @@ export default function NavBar() {
 							<GithubIcon />
 						</a>
 					</div>
-				</nav>
+				</div>
 			</header>
 		</>
 	);
