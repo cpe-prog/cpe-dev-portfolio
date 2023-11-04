@@ -1,14 +1,9 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
-import { useRouter } from "next/router";
 import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function NavBar() {
-	const router = useRouter();
-	const { pathname } = router;
 	const inActiveLink =
-		"hover:p-2 hover:text-textHoverDark hover:font-semibold mr-8 p-2 inActiveLink inline-block relative text-textDark ";
-	const activeLink =
-		inActiveLink + "hover:p-2 text-textHoverDark mr-8 p-2 font-semibold";
+		"hover:p-2 hover:text-textHoverDark hover:font-semibold mr-8 p-2 inActiveLink inline-block relative text-textDark focus:font-semibold focus:text-textHoverDark";
 
 	return (
 		<>
@@ -23,28 +18,16 @@ export default function NavBar() {
 				</div>
 				<nav>
 					<div>
-						<a
-							className={pathname === "/" ? activeLink : inActiveLink}
-							href="/"
-						>
+						<a className={`${inActiveLink} `} href="#">
 							Home
 						</a>
-						<a
-							className={pathname === "#About" ? activeLink : inActiveLink}
-							href="#About"
-						>
+						<a className={`${inActiveLink} `} href="#About">
 							About
 						</a>
-						<a
-							className={pathname === "#Projects" ? activeLink : inActiveLink}
-							href="#Projects"
-						>
+						<a className={`${inActiveLink} `} href="#Projects">
 							Projects
 						</a>
-						<a
-							className={pathname === "#Contact" ? activeLink : inActiveLink}
-							href="#Contact"
-						>
+						<a className={`${inActiveLink} `} href="#Contact">
 							Contact
 						</a>
 					</div>
