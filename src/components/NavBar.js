@@ -15,7 +15,7 @@ export default function NavBar() {
 			<header className=" w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center justify-around fontColor">
 				<div>
 					<a
-						className="font-extrabold text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
+						className="font-extrabold inline-block text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
 						href="/"
 					>
 						Cpe-Prog.
@@ -25,25 +25,25 @@ export default function NavBar() {
 					<div>
 						<a
 							className={pathname === "/" ? activeLink : inActiveLink}
-							href={"/"}
+							href="/"
 						>
 							Home
 						</a>
 						<a
-							className={pathname === "/About" ? activeLink : inActiveLink}
-							href={"/About"}
+							className={pathname === "#About" ? activeLink : inActiveLink}
+							href="#About"
 						>
 							About
 						</a>
 						<a
-							className={pathname === "/Projects" ? activeLink : inActiveLink}
-							href={"/Projects"}
+							className={pathname === "#Projects" ? activeLink : inActiveLink}
+							href="#Projects"
 						>
 							Projects
 						</a>
 						<a
-							className={pathname === "/Contact" ? activeLink : inActiveLink}
-							href={"/Contact"}
+							className={pathname === "#Contact" ? activeLink : inActiveLink}
+							href="#Contact"
 						>
 							Contact
 						</a>
