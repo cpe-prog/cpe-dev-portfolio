@@ -9,7 +9,6 @@ export default function About() {
 			</Head>
 			<main className="w-full flex items-center justify-center min-h-screen">
 				<div id="About">
-					<div></div>
 					<h1>about</h1>
 				</div>
 			</main>

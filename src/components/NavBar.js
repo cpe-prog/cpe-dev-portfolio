@@ -3,7 +3,7 @@ import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function NavBar() {
 	const inActiveLink =
-		"hover:p-2 hover:text-textHoverDark hover:font-semibold mr-8 p-2 inActiveLink inline-block relative text-textDark focus:font-semibold focus:text-textHoverDark";
+		"hover:p-2 hover:text-textHoverDark  mr-8 p-2 inActiveLink inline-block relative text-textDark ";
 
 	return (
 		<>
@@ -17,20 +17,22 @@ export default function NavBar() {
 					</a>
 				</div>
 				<nav>
-					<div>
-						<a className={`${inActiveLink} `} href="#">
-							Home
-						</a>
-						<a className={`${inActiveLink} `} href="#About">
-							About
-						</a>
-						<a className={`${inActiveLink} `} href="#Projects">
-							Projects
-						</a>
-						<a className={`${inActiveLink} `} href="#Contact">
-							Contact
-						</a>
-					</div>
+					<ul>
+						<li>
+							<a className={inActiveLink} href="#">
+								Home
+							</a>
+							<a className={inActiveLink} href="#About">
+								About
+							</a>
+							<a className={inActiveLink} href="#Projects">
+								Projects
+							</a>
+							<a className={inActiveLink} href="#Contact">
+								Contact
+							</a>
+						</li>
+					</ul>
 				</nav>
 				<div className="flex items-center">
 					<div className="flex justify-start gap-4">
