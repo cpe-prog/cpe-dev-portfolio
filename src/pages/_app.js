@@ -1,4 +1,4 @@
-import { Layout } from "@/components/Layout/Layout";
+import { Layout } from "@/components/Layout";
 import "@/styles/AnimatedBg.css";
 import "@/styles/NavBar.css";
 import "@/styles/globals.css";
