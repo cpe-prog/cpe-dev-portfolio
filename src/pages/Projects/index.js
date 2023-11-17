@@ -1,6 +1,6 @@
 import Head from "next/head";
 
-export default function Projects() {
+export default function index() {
 	return (
 		<>
 			<Head>
