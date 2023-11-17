@@ -1,4 +1,3 @@
-import { Layout } from "@/components/Layout";
 import "@/styles/AnimatedBg.css";
 import "@/styles/NavBar.css";
 import "@/styles/globals.css";
@@ -16,9 +15,9 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
-			<Layout className={`${roboto.className} bg-bgLight w-full h-full`}>
+			<main className={`${roboto.className} bg-bgLight w-full h-full`}>
 				<Component {...pageProps} />
-			</Layout>
+			</main>
 		</>
 	);
 }
