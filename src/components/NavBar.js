@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-html-link-for-pages */
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { GithubIcon, LinkedinIcon } from "./icons";
 
 export default function NavBar() {
 	const router = useRouter();
@@ -54,19 +53,6 @@ export default function NavBar() {
 						Contact
 					</Link>
 				</nav>
-				<div className="flex items-center">
-					<div className="flex justify-start gap-4">
-						<a
-							href={"https://www.linkedin.com/in/grian-gajila/"}
-							target={"_blank"}
-						>
-							<LinkedinIcon />
-						</a>
-						<a href={"https://github.com/cpe-prog"} target={"_blank"}>
-							<GithubIcon />
-						</a>
-					</div>
-				</div>
 			</header>
 		</>
 	);
