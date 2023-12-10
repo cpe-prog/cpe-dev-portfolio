@@ -36,6 +36,12 @@ export default function NavBar() {
 						About
 					</Link>
 					<Link
+						className={pathname === "/Services" ? activeLink : inActiveLink}
+						href={"/Services"}
+					>
+						Services
+					</Link>
+					<Link
 						className={pathname === "/Projects" ? activeLink : inActiveLink}
 						href={"/Projects"}
 					>
