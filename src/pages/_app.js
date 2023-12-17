@@ -2,6 +2,7 @@ import Footer from "@/components/Footer";
 import "@/styles/AnimatedBg.css";
 import "@/styles/NavBar.css";
 import "@/styles/globals.css";
+import { ThemeProvider } from "@material-tailwind/react";
 import { Roboto } from "next/font/google";
 import Head from "next/head";
 import NavBar from "./../components/NavBar";
@@ -19,7 +20,9 @@ export default function App({ Component, pageProps }) {
 			</Head>
 			<main className={`${roboto.className} bg-bgLight w-full h-full`}>
 				<NavBar />
-				<Component {...pageProps} />
+				<ThemeProvider>
+					<Component {...pageProps} />
+				</ThemeProvider>
 				<Footer />
 			</main>
 		</>
