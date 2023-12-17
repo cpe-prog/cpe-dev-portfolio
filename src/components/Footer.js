@@ -3,8 +3,8 @@ import { GithubIcon, GmailIcon, LinkedinIcon } from "./icons";
 export default function Footer() {
 	return (
 		<>
-			<footer className="relative bg-slate-500  p-6">
-				<div className="text-sm grid grid-cols-1 lg:grid-cols-2 items-center justify-center late-800 mt-4 border-t border-gray-400 pt-4">
+			<footer className="relative">
+				<div className="text-sm grid grid-cols-1 lg:grid-cols-2 items-center justify-center border-t border-gray-400 p-6">
 					<div className="flex  justify-center">
 						&copy; {new Date().getFullYear()} CpeProg. All Rights Reserved.
 					</div>
