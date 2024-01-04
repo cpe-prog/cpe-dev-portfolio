@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
+import { AiOutlineMenu } from "react-icons/ai";
 
 export default function NavBar() {
 	const router = useRouter();
@@ -12,7 +13,7 @@ export default function NavBar() {
 
 	return (
 		<>
-			<header className="w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center justify-around fontColor">
+			<header className="w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center mx-auto justify-around fontColor">
 				<div>
 					<Link
 						className="font-extrabold inline-block text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
@@ -21,7 +22,7 @@ export default function NavBar() {
 						Cpe-Prog.
 					</Link>
 				</div>
-				<nav className="flex">
+				<nav className="flex hidden">
 					<Link
 						className={pathname === "/" ? activeLink : inActiveLink}
 						href={"/"}
@@ -53,6 +54,21 @@ export default function NavBar() {
 						Contact
 					</Link>
 				</nav>
+				<div>
+					<AiOutlineMenu />
+				</div>
+				<div className="flex text-xs">
+					<ul>
+						<li>
+							<Link href={"/"}>Home</Link>
+						</li>
+
+						<Link href={"/About"}>About</Link>
+						<Link href={"/Services"}>Services</Link>
+						<Link href={"/Projects"}>Projects</Link>
+						<Link href={"/Contact"}>Contact</Link>
+					</ul>
+				</div>
 			</header>
 		</>
 	);

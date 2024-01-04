@@ -15,8 +15,7 @@ export default function Home() {
 			</Head>
 			<main className="flex items-center pt-0 text-textDark w-full min-h-screen">
 				<div className="flex items-center justify-center gap-32 w-full">
-					<div>
-						<div></div>
+					<div className="">
 						<h2 className="text-md cursor-default p-2 w-48 rounded-md mb-5 text-bgLight bg-gradient-to-l from-textDark to-activeBorderBottom via-50% gradiantBackground">
 							👋 Hi! I'm Grian Gajila
 						</h2>
