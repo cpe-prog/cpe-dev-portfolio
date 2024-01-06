@@ -51,7 +51,7 @@ export default function Home() {
 							<Image
 								src={ProfileImage}
 								alt="Profile.img"
-								className="w-64 rounded-br-full rounded-tr-full"
+								className="w-64 max-w-lg md:w-52 lg:w-64 rounded-br-full rounded-tr-full"
 							/>
 						</motion.div>
 					</div>
