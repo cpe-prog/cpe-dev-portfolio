@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }) {
 			<Head>
 				<meta name="viewport" content="width=device-width, initial-scale=1" />
 			</Head>
-			<main className={`${roboto.className} bg-bgLight w-full h-full`}>
+			<main className={`${roboto.className} bg-bgLight w-full h-screen`}>
 				<NavBar />
 				<Component {...pageProps} />
 				<Footer />
