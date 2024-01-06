@@ -16,7 +16,7 @@ export default function NavBar() {
 
 	return (
 		<>
-			<header className="w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center mx-auto justify-around fontColor">
+			<div className="w-full bg-transparent backdrop-blur-md shadow-md fixed h-14 flex items-center mx-auto justify-around fontColor">
 				<div>
 					<Link
 						className="font-extrabold inline-block text-transparent text-xl bg-clip-text bg-gradient-to-r from-black via-acuaGreen-100 via-40% to-black"
@@ -124,7 +124,7 @@ export default function NavBar() {
 						</div>
 					</div>
 				)}
-			</header>
+			</div>
 		</>
 	);
 }
