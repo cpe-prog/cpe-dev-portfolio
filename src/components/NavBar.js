@@ -9,28 +9,6 @@ export default function NavBar() {
 	const { pathname } = router;
 	const [nav, setNav] = useState(false);
 
-	const links = [
-		{
-			id: 1,
-			link: "/",
-		},
-		{
-			id: 2,
-			link: "/About",
-		},
-		{
-			id: 3,
-			link: "/Services",
-		},
-		{
-			id: 4,
-			link: "/Projects",
-		},
-		{
-			id: 5,
-			link: "/Contact",
-		},
-	];
 	const inActiveLink =
 		"hover:p-2 hover:text-textHoverDark  mr-8 p-2 inActiveLink inline-block relative text-textDark ";
 	const activeLink =
@@ -48,7 +26,7 @@ export default function NavBar() {
 					</Link>
 				</div>
 
-				<ul className="hidden md:flex">
+				{/* <ul className="hidden md:flex">
 					{links.map(({ id, link }) => (
 						<li
 							key={id}
@@ -57,61 +35,95 @@ export default function NavBar() {
 							<Link href={link}>{link}</Link>
 						</li>
 					))}
-				</ul>
+				</ul> */}
 
 				<div
 					onClick={() => setNav(!nav)}
 					className="cursor-pointer pr-4 z-10 text-gray-500 md:hidden"
 				>
 					{nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+					<nav className="flex ">
+						<Link
+							className={pathname === "/" ? activeLink : inActiveLink}
+							href={"/"}
+						>
+							Home
+						</Link>
+						<Link
+							className={pathname === "/About" ? activeLink : inActiveLink}
+							href={"/About"}
+						>
+							About
+						</Link>
+						<Link
+							className={pathname === "/Services" ? activeLink : inActiveLink}
+							href={"/Services"}
+						>
+							Services
+						</Link>
+						<Link
+							className={pathname === "/Projects" ? activeLink : inActiveLink}
+							href={"/Projects"}
+						>
+							Projects
+						</Link>
+						<Link
+							className={pathname === "/Contact" ? activeLink : inActiveLink}
+							href={"/Contact"}
+						>
+							Contact
+						</Link>
+					</nav>
 				</div>
 
 				{nav && (
-					<ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-800 text-gray-500">
-						{links.map(({ id, link }) => (
-							<li
-								key={id}
-								className="px-4 cursor-pointer capitalize py-6 text-4xl"
-							>
-								<Link onClick={() => setNav(!nav)} href={link}>
-									{link}
-								</Link>
-							</li>
-						))}
-					</ul>
+					<div className=" flex-col hidden justify-center items-center absolute top-0 left-0 w-full h-60 bg-gradient-to-b from-black to-gray-800 text-gray-500">
+						<div className="px-4 cursor-pointer capitalize py-6  text-4xl">
+							<button onClick={() => setNav(!nav)}>
+								<div>
+									<Link
+										className={pathname === "/" ? activeLink : inActiveLink}
+										href={"/"}
+									>
+										Home
+									</Link>
+									<Link
+										className={
+											pathname === "/About" ? activeLink : inActiveLink
+										}
+										href={"/About"}
+									>
+										About
+									</Link>
+									<Link
+										className={
+											pathname === "/Services" ? activeLink : inActiveLink
+										}
+										href={"/Services"}
+									>
+										Services
+									</Link>
+									<Link
+										className={
+											pathname === "/Projects" ? activeLink : inActiveLink
+										}
+										href={"/Projects"}
+									>
+										Projects
+									</Link>
+									<Link
+										className={
+											pathname === "/Contact" ? activeLink : inActiveLink
+										}
+										href={"/Contact"}
+									>
+										Contact
+									</Link>
+								</div>
+							</button>
+						</div>
+					</div>
 				)}
-				{/* <nav className="flex ">
-					<Link
-						className={pathname === "/" ? activeLink : inActiveLink}
-						href={"/"}
-					>
-						Home
-					</Link>
-					<Link
-						className={pathname === "/About" ? activeLink : inActiveLink}
-						href={"/About"}
-					>
-						About
-					</Link>
-					<Link
-						className={pathname === "/Services" ? activeLink : inActiveLink}
-						href={"/Services"}
-					>
-						Services
-					</Link>
-					<Link
-						className={pathname === "/Projects" ? activeLink : inActiveLink}
-						href={"/Projects"}
-					>
-						Projects
-					</Link>
-					<Link
-						className={pathname === "/Contact" ? activeLink : inActiveLink}
-						href={"/Contact"}
-					>
-						Contact
-					</Link>
-				</nav> */}
 			</header>
 		</>
 	);
