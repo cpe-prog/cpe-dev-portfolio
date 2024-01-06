@@ -12,7 +12,7 @@ export default function index() {
 					<h1 className="md:text-4xl text-3xl lg:text-5xl font-bold mb-5">
 						Services
 					</h1>
-					<div className="flex max-md:flex-wrap gap-7 justify-between">
+					<div className="flex max-md:flex-wrap gap-7 col-span-1 md:col-span-2 lg:col-span-3 justify-between">
 						<div className="d p-5 relativ overflow-hidden mt-5">
 							<h1 className="text-center mt-5">UI/UX Design</h1>
 							<div className="flex justify-center mt-4"></div>
